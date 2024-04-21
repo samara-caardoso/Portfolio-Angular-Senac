@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+        :root{
+            --tam_padrao : 350px;
+            
+        }
+
+        a{
+            color:white;
+        }
+        body {
+            background-color: black;
+        }
+
+        #container_box {
+            width: 900px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #container_secundario {
+            width: 800px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card {
+           
+            width: var(--tam_padrao);
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+
+        #subcard1, #subcard2,#subcard3 {
+
+            width: 340px;
+            height: 140px;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+    
+
+        }
+
+        img {
+            height: auto;
+            width: auto;
+        }
+       
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+
+<body>
+
+    <div id="container_box">
+
+        <div id="container_secundario">
+
+            <div class="card">
+
+                <div id="subcard1">
+
+                    <h1>Samara Cardoso</h1>
+                    <h3> QA @ Itaú Unibanco | Sistemas de Informação & ADS - Mackenzie '23 </h3>
+
+                </div>
+                <div id="subcard2">
+
+                    <p>Cinco anos de experiência na área de tecnologia como analista de qualidade.
+                        3x certificada pelo BSTQB (CTFL, CTFL-AT, CTAL-AT) e 1x AWS (Cloud
+                        Practitioner). 
+                        
+                        <br>
+                        <br> Me siga nas redes sociais!
+                    </p>
+
+                </div>
+                <div id="subcard3">
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <a href="https://www.instagram.com/sam.ara.c/">Instagram</a>
+                    <a href="https://br.linkedin.com/in/c-samara">LinkedIn</a>                   
+
+                </div>
+
+
+            </div>
+
+
+            <div class="card">
+
+                    <img src="samara.png" alt="Imagem mulher com um fundo colorido">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
