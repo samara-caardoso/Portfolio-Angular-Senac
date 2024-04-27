@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+
+<body>
+
+    <h1>AULA 2 - JS & DOM</h1>
+
+</body>
+<script>
+
+    var resultado;
+    num1 = parseFloat(prompt("Digite o primeiro numero: "));
+    num2 = parseFloat(prompt("Digite o segundo numero: "));
+    operacao = prompt("Digite o operador: ");
+
+
+    function calculadora(num1, num2, operacao){
+        switch(operacao){
+            case "+":
+                resultado = num1+num2;
+                break;
+            
+            case "-":
+                resultado=num1-num2;
+                break;
+
+            case "/":
+                resultado=num1/num2;
+                break;
+            
+            case "x":
+                resultado=num1*num2;
+                break;
+        }
+
+        alert(resultado);
+    }
+
+    calculadora(num1,num2,operacao);
+
+</script>
+
+</html>

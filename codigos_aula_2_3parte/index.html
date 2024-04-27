@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+
+        #calculadora{
+
+            width: 500px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+
+        }
+
+        #itens_form{
+
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="calculadora">
+
+        <form id="formulario">
+
+            <h1>Calculadora simples</h1>
+            <div id="itens_form">
+            <input id="primeiro_valor" type="text">
+            <br>
+            <br>
+            <input id="segundo_valor" type="text">
+            <br>
+            <br>
+            <input id="soma" class="botao_acao" type="button" onclick="realizaOperacao('+')" value="+">
+            <input id="sub" class="botao_acao" type="button" onclick="realizaOperacao('-')" value="-">
+            <input id="mult" class="botao_acao" type="button" onclick="realizaOperacao('x')" value="x">
+            <input id="dvd" class="botao_acao" type="button" onclick="realizaOperacao('/')" value="/">
+            <h3 id="resultado">Resultado:</h3>
+            </div>   
+        </form>
+        <br>
+        
+
+    </div>
+
+
+
+</body>
+
+<script>
+
+
+    function realizaOperacao(operacao) {
+
+        var num1 = parseFloat(document.getElementById('primeiro_valor').value);
+        var num2 = parseFloat(document.getElementById('segundo_valor').value);
+        var resultado;
+
+        switch (operacao) {
+
+            case "+":
+                resultado = num1 + num2;
+                break;
+
+            case "-":
+                resultado = num1 - num2;
+                break;
+
+            case "/":
+                resultado = num1 / num2;
+                break;
+
+            case "x":
+                resultado = num1 * num2;
+                break;
+        }
+
+        document.getElementById('resultado').innerHTML="Resultado: "+resultado;
+    }
+
+
+</script>
+
+</html>

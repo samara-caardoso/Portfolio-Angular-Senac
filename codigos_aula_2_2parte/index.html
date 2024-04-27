@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var valores_pa = prompt("Digite o termo inicial, a razão da progressao e a quantidade de itens" );
+    valores_pa = valores_pa.split(" ");
+
+    var termo_inicial = parseFloat(valores_pa[0]);
+    var razao = parseFloat(valores_pa[1]);
+    var qtde_itens = parseFloat(valores_pa[2]);
+
+    for (i = 0; i < qtde_itens; i++){
+
+         
+        console.log(termo_inicial);
+        termo_inicial = termo_inicial+razao;
+
+        
+
+    }
+
+</script>
+</html>
