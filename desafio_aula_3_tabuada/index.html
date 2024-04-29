@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+
+    <style>
+
+    
+        #container_background{
+
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-image: linear-gradient(to bottom right, MediumAquaMarine, DarkSlateBlue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #container_tabuada{
+
+            background-color: white;
+            width: 500px;
+            height: 700px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            
+        }
+
+        img {
+
+            width: 500px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+
+
+
+        }
+
+       
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container_background">
+
+        <div id="container_tabuada">
+
+            <div id="container_imagem_tabuada">
+
+                <img id="bg_tabuada" src="bg_img_tabuada.jpg" alt="Figura colorida representando a tabuada">
+                
+
+            </div>
+
+            <div id="form_tabuada">
+
+                <br>
+                <label for="input_numero_tabuada">Digite seu número: </label>
+                <br>
+                <br>
+                <input id="input_numero_tabuada" type="text">
+                <br>
+                <br>
+                <input id="submit_numero_tabuada" type="button" value="Criar tabuada" onclick="criarTabuada()">
+
+
+            </div>
+
+            <div id="texto_resposta_tabuada">
+
+                <p id="paragrafo_texto_tabuada"></p>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+
+var numero_a_ser_multiplicado;
+var espaco_resposta_tabuada = document.getElementById("paragrafo_texto_tabuada");
+var prox_linha;
+
+function criarTabuada(){
+
+    numero_a_ser_multiplicado = parseFloat(document.getElementById("input_numero_tabuada").value);
+
+    for (i=0; i <11; i++){
+
+        var linha = document.createElement("p");
+        var texto = numero_a_ser_multiplicado+" x "+i+" = "+numero_a_ser_multiplicado*i;
+        linha.textContent=texto;
+        espaco_resposta_tabuada.appendChild(linha);
+
+    }
+
+}
+
+</script>
+
+</html>
